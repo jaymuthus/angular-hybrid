@@ -10,21 +10,25 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var static_1 = require("@angular/upgrade/static");
-var AppModule = /** @class */ (function () {
+//Moved to ng/ngx-directive.ts
+var static_2 = require("@angular/upgrade/static");
+var myJsApp = angular.module("myJsApp");
+myJsApp.directive('ngxComponent', static_2.downgradeComponent({ component: app_component_1.AppComponent }));
+var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [
-                platform_browser_1.BrowserModule,
-                static_1.UpgradeModule
-            ],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent]
-        })
-    ], AppModule);
     return AppModule;
 }());
+AppModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            platform_browser_1.BrowserModule,
+            static_1.UpgradeModule
+        ],
+        declarations: [app_component_1.AppComponent],
+        bootstrap: [app_component_1.AppComponent]
+    })
+], AppModule);
 exports.AppModule = AppModule;
 /*
 Copyright 2017 Google Inc. All Rights Reserved.
