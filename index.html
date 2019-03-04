@@ -9,11 +9,11 @@
       body {color:#369;font-family: Arial,Helvetica,sans-serif;}
     </style>
     
-    <!--
-    <script src="//unpkg.com/angular/angular.js"></script>
+   
+    <!--<script src="//unpkg.com/angular/angular.js"></script>
     -->
-    <script src="//code.angularjs.org/snapshot/angular.js"></script>
-    <script src="/src/ng/script.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="src/ng/script.js"></script> 
     <script>
       /*angular.element(function() {
         angular.bootstrap(document, ['myJsApp']);
@@ -21,10 +21,10 @@
     </script>
 
     <!-- Polyfills -->
-    <script src="https://unpkg.com/core-js/client/shim.min.js"></script>
+    <script src="node_modules/core-js/client/shim.min.js"></script>
 
-    <script src="https://unpkg.com/zone.js@0.8.4?main=browser"></script>
-    <script src="https://unpkg.com/systemjs@0.19.39/dist/system.src.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="systemjs.config.js"></script>
     <script>
       System.import('src/main.js').catch(function(err){ console.error(err); });
