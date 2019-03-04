@@ -1,0 +1,29 @@
+{
+  "name": "package-name",
+  "version": "1.0.0",
+  "description": "Description of your package",
+  "scripts": {
+    "build": "tsc -p src/",
+    "build:watch": "tsc -p src/ -w",
+    "start": "concurrently \"node ./server\" \"node ./node_modules/browser-sync/dist/bin start --proxy localhost:3000 --files src/**/*.*\" \"npm run build:watch\""
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^7.2.7",
+    "@angular/compiler": "^7.2.7",
+    "@angular/core": "^7.2.7",
+    "@angular/forms": "^7.2.7",
+    "@angular/http": "^7.2.7",
+    "@angular/platform-browser": "^7.2.7",
+    "@angular/platform-browser-dynamic": "^7.2.7",
+    "@angular/upgrade": "^7.2.7",
+    "connect-history-api-fallback": "^1.5.0",
+    "express": "4.15.2",
+    "rxjs": "^6.4.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "concurrently": "^3.2.0"
+  }
+}
