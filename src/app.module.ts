@@ -1,13 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent }  from './app.component';
+import { AppComponent }  from './ngx/app.component';
 import { UpgradeModule } from '@angular/upgrade/static';
-
-//Moved to ng/ngx-directive.ts
-import {downgradeComponent} from "@angular/upgrade/static";
-declare var angular: any;
-var myJsApp = angular.module("myJsApp");
-myJsApp.directive('ngxComponent', downgradeComponent({component: AppComponent}));
 
 
 @NgModule({

@@ -8,12 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
+var app_component_1 = require("./ngx/app.component");
 var static_1 = require("@angular/upgrade/static");
-//Moved to ng/ngx-directive.ts
-var static_2 = require("@angular/upgrade/static");
-var myJsApp = angular.module("myJsApp");
-myJsApp.directive('ngxComponent', static_2.downgradeComponent({ component: app_component_1.AppComponent }));
 var AppModule = (function () {
     function AppModule() {
     }
