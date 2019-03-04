@@ -15,7 +15,7 @@
     paths: {
       // paths serve as alias
       'npm:': 'https://unpkg.com/',
-      'local:': 'node_modules',
+      'local:': 'node_modules/',
       'pl:': 'https://unpkg.com/'
 
     },
@@ -25,7 +25,6 @@
       'app': 'src',
 
       // angular bundles
-      'angular': 'local:angular/angular.js',
       '@angular/core': 'npm:@angular/core@5/bundles/core.umd.js',
       '@angular/common': 'npm:@angular/common@5/bundles/common.umd.js',
       '@angular/compiler': 'npm:@angular/compiler@5/bundles/compiler.umd.js',
@@ -42,8 +41,7 @@
       'rxjs':                      'npm:rxjs@5.0.1',
       'angular-in-memory-web-api': 'pl:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
       'ts':                        'local:plugin-typescript/lib/plugin.js',
-      'typescript':                'local:typescript/lib/typescript.js',
-
+      'typescript':                'local:typescript/lib/typescript.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
