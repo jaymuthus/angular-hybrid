@@ -28,7 +28,7 @@
       'angular': 'local:angular/angular.js',
       '@angular/core': 'npm:@angular/core@5/bundles/core.umd.js',
       '@angular/common': 'npm:@angular/common@5/bundles/common.umd.js',
-      '@angular/compiler': 'npm:@angular/compiler@5/bundles/compiler.umd.js',
+      '@angular/compiler': 'local:@angular/compiler/bundles/compiler.umd.js',
       '@angular/platform-browser': 'npm:@angular/platform-browser@5/bundles/platform-browser.umd.js',
       '@angular/platform-browser-dynamic': 'local:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
       '@angular/http': 'local:@angular/http/bundles/http.umd.js',
