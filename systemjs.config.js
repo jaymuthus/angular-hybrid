@@ -39,8 +39,8 @@
       '@angular/upgrade/static': 'local:@angular/upgrade/bundles/upgrade-static.umd.js',
 
       // other libraries
-      'rxjs':                      'npm:rxjs@5.0.1',
-      'angular-in-memory-web-api': 'pl:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
+      'rxjs':                       'local:rxjs',
+      'angular-in-memory-web-api': 'local:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
       'ts':                        'local:plugin-typescript/lib/plugin.js',
       'typescript':                'local:typescript/lib/typescript.js',
 
